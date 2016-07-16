@@ -1,7 +1,4 @@
 class Card(object):
-    deck = 0
-    suit = 0
-    number = 0
 
     suit_dict = {
         1: "S",

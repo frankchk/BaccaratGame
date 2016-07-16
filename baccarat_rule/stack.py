@@ -17,12 +17,13 @@ class Stack(object):
         random.shuffle(self.stack)
 
     def print(self):
+        i = 1
         for card in self.stack:
-            print(card)
+            print("{} : {}".format(i,card))
+            i += 1
 
     def pop(self):
         return self.stack.pop(0)
 
-    @property
     def size(self):
         return len(self.stack)
