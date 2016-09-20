@@ -19,5 +19,8 @@ class Hand(object):
             print("{} : {}".format(i,card))
             i += 1
 
-    def get_card(self,pos : int) -> Card:
+    def get_card(self, pos : int) -> Card:
         return self.card_list[pos]
+
+    def get_size(self) -> int:
+        return len(self.card_list)
